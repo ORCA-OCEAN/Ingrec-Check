@@ -1,4 +1,4 @@
-# Ingrec-Check
+# Ingre-Check
 
 # IngreCheck – Scan Before You Eat
 
