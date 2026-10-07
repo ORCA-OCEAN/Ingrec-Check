@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard – IngreCheck</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">IC</span><span class="brand-name">IngreCheck</span>
+      </a>
+      <div class="nav-actions" data-nav-user></div>
+    </div>
+  </nav>
+
+  <main class="container row row-2">
+    <aside class="card p-4 sidebar">
+      <h3>Hello, <span id="hello">User</span> 👋</h3>
+      <div class="mt-3">
+        <a class="active" href="dashboard.html">Overview</a>
+        <a href="scan.html">Scan Label</a>
+        <a href="history.html">History</a>
+        <a href="profile.html">Profile</a>
+      </div>
+    </aside>
+
+    <section>
+      <div class="card p-4">
+        <h2>Quick actions</h2>
+        <div class="mt-3">
+          <a class="btn btn-primary" href="scan.html">Upload / Scan Label</a>
+          <a class="btn btn-light" href="history.html">View History</a>
+        </div>
+      </div>
+
+      <div class="card p-4 mt-4">
+        <h3>Recent scans</h3>
+        <ul id="recent-list" class="mt-2"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span class="brand-name">IngreCheck</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>

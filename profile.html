@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Profile – IngreCheck</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">IC</span><span class="brand-name">IngreCheck</span>
+      </a>
+      <div class="nav-actions" data-nav-user></div>
+    </div>
+  </nav>
+
+  <main class="container row row-2">
+    <aside class="card p-4 sidebar">
+      <a href="dashboard.html">Overview</a>
+      <a href="scan.html">Scan Label</a>
+      <a href="history.html">History</a>
+      <a class="active" href="profile.html">Profile</a>
+    </aside>
+
+    <section class="card p-4">
+      <h2>Profile</h2>
+      <form id="profile-form" class="mt-3">
+        <label>Name
+          <input id="name" class="input" required>
+        </label>
+        <label class="mt-3">Email (read-only)
+          <input id="email" class="input" disabled>
+        </label>
+
+        <div class="mt-3">
+          <div class="mb-2">Health Issues</div>
+          <div id="issues-box" class="row row-2"></div>
+        </div>
+
+        <button class="btn btn-primary mt-4" type="submit">Save Changes</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">© <span class="brand-name">IngreCheck</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>

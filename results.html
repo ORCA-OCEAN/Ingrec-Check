@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Results – IngreCheck</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">IC</span><span class="brand-name">IngreCheck</span>
+      </a>
+      <div class="nav-actions" data-nav-user></div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="card p-4">
+      <h2 id="product-name">Product</h2>
+      <div id="summary" class="mt-2"></div>
+
+      <div class="mt-4">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Ingredient</th>
+              <th>Safe Limit</th>
+              <th>Status</th>
+              <th>Remarks</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+
+      <div class="mt-4">
+        <button id="save-history" class="btn btn-primary">Save to History</button>
+        <a class="btn btn-light" href="scan.html">Scan Another</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">© <span class="brand-name">IngreCheck</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
